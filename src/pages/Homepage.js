@@ -65,40 +65,40 @@ const Homepage = () => {
                             link="/cards"
                         />
                         <MainCard
-                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
-                            title="Heart background design"
+                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572182553/thank-you-944086_1920.jpg"
+                            title="Thank you"
                             name="jeremy"
                             price="Free"
                             category="Love"
                             link="/cards"
                         />
                         <MainCard
-                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
-                            title="Heart background design"
+                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572182553/background-2997306_1920.jpg"
+                            title="Christmas background design"
                             name="jeremy"
                             price="Free"
                             category="Love"
                             link="/cards"
                         />
                         <MainCard
-                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
-                            title="Heart background design"
+                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572182238/christmas-card-2999091_1280.png"
+                            title="Merry Christmas"
                             name="jeremy"
                             price="Free"
                             category="Love"
                             link="/cards"
                         />
                         <MainCard
-                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
-                            title="Heart background design"
+                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572182221/christmas-2982969_1280.jpg"
+                            title="Season's greetings"
                             name="jeremy"
                             price="Free"
                             category="Love"
                             link="/cards"
                         />
                         <MainCard
-                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
-                            title="Heart background design"
+                            image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572182195/christmas-2894952_1280.png"
+                            title="Cristmas design"
                             name="jeremy"
                             price="Free"
                             category="Love"
