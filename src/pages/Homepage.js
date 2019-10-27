@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import MainCard from '../components/Card';
 import './homepage.css';
 
@@ -50,7 +51,7 @@ const Homepage = () => {
                             </p>
                         </div>
                     </div>
-                    <Button variant="primary" size="lg">Get Started</Button>
+                    <Link to="/cards"><Button variant="primary" size="lg">Get Started</Button></Link>
                 </section>
                 <section className="card-showcase">
                     <h2>Card Showcase</h2>
@@ -61,6 +62,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                         <MainCard
                             image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
@@ -68,6 +70,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                         <MainCard
                             image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
@@ -75,6 +78,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                         <MainCard
                             image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
@@ -82,6 +86,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                         <MainCard
                             image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
@@ -89,6 +94,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                         <MainCard
                             image="https://res.cloudinary.com/drlcfqzym/image/upload/v1572139263/heart-3280747_1280.jpg"
@@ -96,6 +102,7 @@ const Homepage = () => {
                             name="jeremy"
                             price="Free"
                             category="Love"
+                            link="/cards"
                         />
                     </div>
                     <div className="text-center">
