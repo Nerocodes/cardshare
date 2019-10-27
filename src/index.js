@@ -23,7 +23,7 @@ const routing = (
                 <Route path="/login" component={Login} />
                 <Route exact path="/gifts" component={Gifts} />
                 <Route exact path="/causes" component={Causes} />
-                <Route path="/cards" component={ViewCard} />
+                <Route exact path="/cards" component={ViewCard} />
             </Switch>
             <Footer />
         </div>
