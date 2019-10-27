@@ -1,24 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Route,Switch, BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
+import Nav from './components/Navbar';
+import Footer from './components/Footer';
+import Homepage from './pages/Homepage';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import HowItWorks from './pages/HowItWorks';
-import Categories from './pages/Categories';
+import Gifts from './pages/Gifts';
+import Causes from './pages/Causes';
+import ViewCard from './pages/ViewCard';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
     <Router>
-      <div>
-        <Route path="/" component={App} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
-        <Route path="/how-it-works" component={HowItWorks} />
-        <Route path="/categories" component={Categories} />
-      </div>
+        <div>
+            <Nav className="navbar"/>
+            <Switch>
+                <Route exact path="/" component={Homepage} />
+                <Route path="/register" component={Register} />
+                <Route path="/login" component={Login} />
+                <Route exact path="/gifts" component={Gifts} />
+                <Route exact path="/causes" component={Causes} />
+                <Route path="/cards" component={ViewCard} />
+            </Switch>
+            <Footer />
+        </div>
     </Router>
   )
 

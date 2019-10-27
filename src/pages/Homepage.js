@@ -1,8 +1,7 @@
 import React from 'react';
-import Nav from '../components/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import MainCard from '../components/Card';
-import Footer from '../components/Footer';
 import './homepage.css';
 
 
@@ -10,19 +9,20 @@ const Homepage = () => {
     return (
         <section className="homepage">
             <header className="header">
-                <Nav className="navbar"/>
                 <div className="header-body d-flex align-items-center">
                     <div className="image">
                         <img src="https://res.cloudinary.com/drlcfqzym/image/upload/v1572131667/Frame_1.png" alt="Cards"></img>
                     </div>
                     <div className="intro text-center">
-                        <h1>Send Cards To Loved Ones</h1>
-                        <Button variant="primary" size="lg">See How It Works</Button>
+                        <h1>Share... <br></br> <span className="big-text">Love <span className="grey-text">Inspiration</span> Hope</span></h1>
+                        <Nav.Link href="/#how-it-works">
+                            <Button variant="primary" size="lg">See How It Works</Button>
+                        </Nav.Link>
                     </div>
                 </div>
             </header>
             <main>
-                <section className="how-it-works">
+                <section className="how-it-works" id="how-it-works">
                     <h2>How It Works</h2>
                     <div className="instructions d-flex justify-content-between">
                         <div className="instruction">
@@ -103,7 +103,6 @@ const Homepage = () => {
                     </div>
                 </section>
             </main>
-            <Footer />
         </section>
     )
 }

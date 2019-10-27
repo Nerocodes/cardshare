@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    height: 90vh;
 }
 
 .navbar {
@@ -19,9 +19,19 @@
 }
 
 .header-body .intro h1 {
-    width: 50%;
-    font-size: 3rem;
-    margin: 1rem auto;
+    width: 80%;
+    font-size: 2.5rem;
+    margin: 2rem auto;
+    color: #888888;
+    margin-top: -2rem;
+}
+
+.header-body .intro .big-text {
+    font-size: 2.8rem;
+}
+
+.header-body .intro .grey-text {
+    color: #000000;
 }
 
 .how-it-works {
