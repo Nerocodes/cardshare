@@ -3,7 +3,9 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import SignatureCanvas from 'react-signature-canvas';
 import CreatableSelect from 'react-select/creatable';
+import Spinner from 'react-bootstrap/Spinner';
 import domtoimage from 'dom-to-image';
+import axios from 'axios';
 import './viewcard.css';
 import MainCard from '../../components/Card';
 
@@ -12,10 +14,29 @@ const ViewCard = () => {
     const [message, setMessage] = useState('');
     const [signature, setSignature] = useState({});
     const [signatureUrl, setSignatureUrl] = useState(null);
+    const [imgUrl, setImgUrl] = useState('');
+    const [emails, setEmails] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const trim = () => {
-          setSignatureUrl(signature.getTrimmedCanvas().toDataURL('image/png'));
-      }
+        setSignatureUrl(signature.getTrimmedCanvas().toDataURL('image/png'));
+    }
+
+    const send = () => {
+        setIsLoading(true);
+        const image_url = imgUrl;
+        const emailArr = [];
+        emails.map((email) => {
+            return emailArr.push(email.value);
+        });
+        const comma_seperated_emails = emailArr.join(',');
+        axios.post('https://andelahack19.herokuapp.com/api/card/test', { image_url, comma_seperated_emails})
+            .then(res => {
+                setIsLoading(false);
+                console.log(res.data);
+            })
+            .catch(err => console.log(err));
+    }
 
     const download = () => {
         var node = document.querySelector('#full-card');
@@ -23,7 +44,7 @@ const ViewCard = () => {
         domtoimage.toJpeg(node, { quality: 0.95, bgcolor: '#ffffff', style: { margin: '0' } })
             .then(function (dataUrl) {
                 var link = document.createElement('a');
-                console.log(dataUrl);
+                setImgUrl(dataUrl);
                 link.download = 'card';
                 link.href = dataUrl;
                 link.click();
@@ -84,11 +105,20 @@ const ViewCard = () => {
                             options={[{value: '', label: ''}]}
                             className="select"
                             placeholder="Enter email to send card"
+                            onChange={(options) => setEmails(options)}
                         />
                         <Button variant="outline-primary" className="ml-1" type="submit" onClick={() => {
-                            
+                            send();
                             }}>
-                            Send
+                            { isLoading ? (
+                                <Spinner
+                                    as="span"
+                                    animation="border"
+                                    size="sm"
+                                    role="status"
+                                    aria-hidden="true"
+                                />
+                            ) : 'Send' }
                         </Button>
                         <Button variant="outline-primary" className="ml-3" type="submit" onClick={() => {
                             download();
