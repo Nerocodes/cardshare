@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from '../components/Navbar';
 import Button from 'react-bootstrap/Button';
 import MainCard from '../components/Card';
 import Footer from '../components/Footer';
@@ -10,7 +9,6 @@ const Homepage = () => {
     return (
         <section className="homepage">
             <header className="header">
-                <Nav className="navbar"/>
                 <div className="header-body d-flex align-items-center">
                     <div className="image">
                         <img src="https://res.cloudinary.com/drlcfqzym/image/upload/v1572131667/Frame_1.png" alt="Cards"></img>
@@ -22,7 +20,7 @@ const Homepage = () => {
                 </div>
             </header>
             <main>
-                <section className="how-it-works">
+                <section className="how-it-works" id="how-it-works">
                     <h2>How It Works</h2>
                     <div className="instructions d-flex justify-content-between">
                         <div className="instruction">
