@@ -7,7 +7,9 @@ import App from './App';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import HowItWorks from './pages/HowItWorks';
-import Categories from './pages/Categories';
+import Gifts from './pages/Gifts';
+import Causes from './pages/Causes';
+import ViewCard from './pages/ViewCard';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -17,7 +19,9 @@ const routing = (
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/how-it-works" component={HowItWorks} />
-        <Route path="/categories" component={Categories} />
+        <Route path="/gifts" component={Gifts} />
+        <Route path="/causes" component={Causes} />
+        <Route path="/cards" component={ViewCard} />
       </div>
     </Router>
   )

@@ -16,7 +16,8 @@ const MainNav = () => {
             </Navbar.Brand>
             <Nav className="ml-auto">
                 <Nav.Link href="/how-it-works">How it works</Nav.Link>
-                <Nav.Link href="/categories">Categories</Nav.Link>
+                <Nav.Link href="/gifts">Categories</Nav.Link>
+                <Nav.Link href="/causes">Categories</Nav.Link>
                 <Nav.Link href="/register">Register</Nav.Link>
                 <Nav.Link href="/login">Login</Nav.Link>
             </Nav>
