@@ -1,0 +1,10 @@
+@media all and (min-width: 480px) {
+    .register-page {
+      padding: 40px 0;
+    }
+  
+    .register-page form {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
