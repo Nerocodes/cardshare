@@ -4,6 +4,7 @@ import { Route,Switch, BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Nav from './components/Navbar';
+import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
 import Register from './pages/Register';
 import Login from './pages/Login';
@@ -24,6 +25,7 @@ const routing = (
                 <Route exact path="/causes" component={Causes} />
                 <Route path="/cards" component={ViewCard} />
             </Switch>
+            <Footer />
         </div>
     </Router>
   )

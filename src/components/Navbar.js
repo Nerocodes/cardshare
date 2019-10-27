@@ -18,7 +18,7 @@ const MainNav = () => {
                 </Navbar.Brand>
             </LinkContainer>
             <Nav className="ml-auto">
-                <Nav.Link href="#how-it-works">How it works</Nav.Link>
+                <Nav.Link href="/#how-it-works">How it works</Nav.Link>
                 <LinkContainer to="/gifts">
                     <Nav.Link>Gifts</Nav.Link>
                 </LinkContainer>
