@@ -1,0 +1,72 @@
+.header {
+    height: 100vh;
+}
+
+.navbar {
+    padding: 0.5rem 4rem;
+}
+
+.header-body {
+    padding: 2rem;
+}
+
+.header-body .image {
+    width: 50%;
+}
+
+.header-body .intro {
+    width: 50%;
+}
+
+.header-body .intro h1 {
+    width: 50%;
+    font-size: 3rem;
+    margin: 1rem auto;
+}
+
+.how-it-works {
+    text-align: center;
+    min-height: 70vh;
+    margin-top: 4rem;
+}
+
+.how-it-works h2, .card-showcase h2 {
+    text-align: center;
+}
+
+.how-it-works .instructions {
+    width: 80%;
+    margin: 4rem auto;
+    margin-bottom: 1rem;
+}
+
+.how-it-works .instruction .title {
+    background-color: #223045;
+    color: #ffffff;
+    width: 200px;
+    height: 150px;
+    border-radius: 40px;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(315deg);
+    position: relative;
+    text-align: center;
+}
+
+.how-it-works .instruction .title h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.how-it-works .instruction .description {
+    width: 200px;
+    text-align: center;
+}
+
+.card-showcase .cards {
+    width: 80%;
+    margin: 4rem auto;
+    margin-bottom: 1rem;
+}
